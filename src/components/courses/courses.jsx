@@ -29,16 +29,34 @@ const Courses = () => {
                         alt='Green double couch with wooden legs'
                         borderRadius='lg'
                     />
-                    <Stack mt='6' spacing='3'>
-                        <Heading size='md'>{title}</Heading>
-                        <Text>{description}</Text>
-                        <Text color='teal.500' fontSize='2xl'>
+                    <Stack mt='6' spacing='2'>
+                        <Heading size='md' noOfLines={1}>{title}</Heading>
+                        <Text noOfLines={2} fontSize="14px">{description}</Text>
+                        <Text  color='teal.500' fontSize='2xl'>
                         ₹450
                         </Text>
                     </Stack>
+                    <HStack marginTop={"1"}>
+                        <Heading size={"sm"} color="teal.500">Teacher's: </Heading>
+                        <Text fontSize={"16px"}>{creator}</Text>
+                    </HStack>
+                    <HStack marginTop={"1"}  spacing='6' >
+                    <HStack >
+                        <Heading size={"sm"} color="teal.500">Videos: </Heading>
+                        <Text fontSize={"16px"}>{lectures}</Text>
+                    </HStack>
+                    <HStack>
+                        <Heading size={"sm"} color="teal.500">Views: </Heading>
+                        <Text fontSize={"16px"}>{views}</Text>
+                    </HStack>
+                    <HStack>
+                        <Text fontSize={"14px"}>{"6 Days Ago"}</Text>
+                    </HStack>
+                    </HStack>
+                   
                 </CardBody>
                
-                <CardFooter>
+                <CardFooter marginTop={"-6"}>
                     <ButtonGroup spacing='2'>
                         <LightMode><Button variant='solid' colorScheme='teal'>
                             Watch now
@@ -95,7 +113,7 @@ const Courses = () => {
                     creator={"sample"}
                     lectures={2}
                     views={23}
-                    description={"lola ! How Are You?"}
+                    description={"lola ! How Are You? ya ya fine and what about you? ya i know you are gonna pay"}
                     addToPlaylistHandler={addToPlaylistHandler}
                 />
 
