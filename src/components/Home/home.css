@@ -1,0 +1,52 @@
+.container{
+    height: 100vh;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+.vector-graphics{
+    filter: drop-shadow(0 40px 10px rgba(0,0,0,0.3));
+    animation: vectorAnimation 1s infinite ease-in-out alternate;
+}
+
+@keyframes vectorAnimation {
+    to{
+        transform: translateY(-10px);
+    }
+    
+}
+.brandsBanner{
+    color:white;
+    font-size: 3rem;
+    transition: color 0.5s;
+    
+}
+.brandsBanner > svg:hover{
+    color:rgb(255, 221, 0)
+}
+.course-card{
+    margin-bottom: 1rem;
+    transition: all 0.5s;
+}
+.course-card:hover{
+    transform: translateY(-10px);
+}
+@media screen and (max-width: 1282px){
+
+    .vector-graphics{
+        height: 300px !important;
+        width: 300px !important;
+    }
+    
+
+  }
+  @media screen and (max-width: 1145px){
+
+    .heading{
+        font-size: 24px !important;
+    }
+    .text{
+        font-size: 14px!important;
+    }
+    
+
+  }
