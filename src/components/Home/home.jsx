@@ -8,7 +8,7 @@ import {DiAws} from "react-icons/di"
 import vg from "../../assets/images/coursess.png"
 import VerticalSlidingTextAnime from '../animation/verticalSlidingTextAnime';
 
-const home = () => {
+const home = ({setIsHeader}) => {
     const course = [
         "DataStructure & Algorithms",
         "Operating System",
@@ -17,7 +17,8 @@ const home = () => {
         "Computer Networks",
         "Problem Solving Skils",
         "Java SpringBoot",
-    ]
+    ];
+    setIsHeader(true);
     return (
         <section className='home'>
             <div className='container'>
@@ -29,7 +30,7 @@ const home = () => {
                 width="100%"
                 
                 >
-                <Input placeholder='Please Write Your Desires...' size={'lg'} border="2px" borderColor={"teal.400"} focusBorderColor={"teal.400"} width="60%" />
+                <Input placeholder='Please Write Your Desires...' size={'lg'} border="2px" borderColor={"teal.400"} focusBorderColor={"teal.500"} width="60%" />
                 <LightMode><Button size={"lg"} colorScheme="teal">Find</Button></LightMode>
                 </Stack>
                 <Stack

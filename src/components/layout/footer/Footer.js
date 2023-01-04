@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, LightMode, Stack, VStack } from '@chakra-ui/react'
+import { Box, Heading, HStack, LightMode} from '@chakra-ui/react'
 import React from 'react'
 import Logo from '../../Home/Logo'
 import { FaLinkedin, FaInstagram, FaFacebookSquare, FaGithub, FaYoutube } from "react-icons/fa"
@@ -9,7 +9,7 @@ const Footer = () => {
       <Box padding={4} className="footer" bg={"teal.900"} minH={"20vh"} >
       <footer id="footer">
         <div className="midFooter">
-          <h1 className="rx"><Logo /></h1>
+          <Logo />
           <p>High Quality Is Our First Priority</p>
           <p>Copyrights 2021 &copy; orginonature</p>
         </div>

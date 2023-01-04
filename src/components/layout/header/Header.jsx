@@ -1,4 +1,4 @@
-import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, HStack, Image, LightMode, Text, useDisclosure, VStack } from '@chakra-ui/react'
+import { Button, Drawer, DrawerBody, DrawerContent, DrawerHeader, DrawerOverlay, HStack, LightMode,  useDisclosure, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { ColorModeSwitcher } from "../../../ColorModeSwitcher"
 import { RiDashboardFill, RiLoginBoxLine, RiLogoutBoxLine, RiMenu5Fill } from "react-icons/ri"
@@ -15,7 +15,7 @@ const LinkButton = ({ url = "/", title = "HOME", onClose }) => {
 }
 const Header = () => {
     const { isOpen, onClose, onOpen } = useDisclosure();
-    const isAuthenticated = true;
+    const isAuthenticated = false;
     return (
         <>
             <ColorModeSwitcher />
@@ -72,7 +72,7 @@ const Header = () => {
                                     :
                                     (
                                         <>
-                                            <Link onClick={onClose} ><Button colorScheme={"teal"} variant={"ghost"}><RiLoginBoxLine style={{ marginRight: "4px" }} /> Login</Button></Link>
+                                            <Link to={"/signin"} onClick={onClose} ><Button colorScheme={"teal"} variant={"ghost"}><RiLoginBoxLine style={{ marginRight: "4px" }} /> Login</Button></Link>
                                             <p>OR</p>
                                             <Link onClick={onClose} ><Button colorScheme={"teal"} variant={"ghost"}><SiTheregister style={{ marginRight: "4px" }} />Register</Button></Link>
                                         </>

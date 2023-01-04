@@ -24,11 +24,21 @@
     color:rgb(255, 221, 0)
 }
 .course-card{
+    border: 1px solid teal;
     margin-bottom: 1rem;
     transition: all 0.5s;
 }
 .course-card:hover{
     transform: translateY(-10px);
+}
+@media screen and (max-width: 651px){
+    .auth-form{
+        margin-left: 30px !important;
+        margin-right: 30px !important;
+    }
+    .auth-container{
+        margin-top: 180px !important;
+    }
 }
 @media screen and (max-width: 1282px){
 

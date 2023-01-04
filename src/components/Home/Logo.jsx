@@ -7,7 +7,7 @@ const Logo = ({onClose}) => {
         <Link onClick={onClose} to="/">
             <HStack>
                 <Image src={Logoo} objectFit="contain" />
-                <Text fontFamily={"cursive"} color="teal.500" children="LffyEd." />
+                <Text fontFamily={"sans-serif"} fontWeight="bold" color="teal.500" children="Trie.com" />
             </HStack>
         </Link>
     )

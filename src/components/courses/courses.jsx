@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
 
-const Courses = () => {
+const Courses = ({setIsHeader}) => {
     const [keyWord, setKeyWord] = useState("");
     const [category, setCategory] = useState("")
     const courses = [
@@ -14,7 +14,8 @@ const Courses = () => {
         "Computer Networks",
         "Problem Solving Skils",
         "Java SpringBoot",
-    ]
+    ];
+    setIsHeader(true)
     const addToPlaylistHandler = (id) => {
 
     }
