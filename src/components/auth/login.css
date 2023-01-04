@@ -1,0 +1,28 @@
+.LoginSignUpContainer {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    top: 0%;
+    left: 0;
+  }
+  
+ .file-input{
+    padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid teal;
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+ }
+  
+  
+  .auth-card{
+    border: 0.5px solid rgb(181, 184, 184);
+    transition: all 0.5s;
+}

@@ -1,6 +1,6 @@
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Container, Divider, Heading, HStack, Image, Input, LightMode, Stack, Text, VStack } from '@chakra-ui/react'
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Container, Heading, HStack, Image, Input, LightMode, Stack, Text } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+
 
 
 const Courses = ({setIsHeader}) => {
@@ -33,22 +33,23 @@ const Courses = ({setIsHeader}) => {
                     <Stack mt='6' spacing='2'>
                         <Heading size='md' noOfLines={1}>{title}</Heading>
                         <Text noOfLines={2} fontSize="14px">{description}</Text>
-                        <Text  color='teal.500' fontSize='2xl'>
+                        <Text  fontSize='2xl'>
                         ₹450
                         </Text>
                     </Stack>
                     <HStack marginTop={"1"}>
-                        <Heading size={"sm"} color="teal.500">Teacher's: </Heading>
+                        <Heading size={"sm"} >Teacher's: </Heading>
                         <Text fontSize={"16px"}>{creator}</Text>
                     </HStack>
                     <HStack marginTop={"1"}  spacing='6' >
                     <HStack >
-                        <Heading size={"sm"} color="teal.500">Videos: </Heading>
+                        <Heading size={"sm"}>Videos: </Heading>
                         <Text fontSize={"16px"}>{lectures}</Text>
                     </HStack>
                     <HStack>
-                        <Heading size={"sm"} color="teal.500">Views: </Heading>
+                        
                         <Text fontSize={"16px"}>{views}</Text>
+                        <Heading size={"xs"} >Views</Heading>
                     </HStack>
                     <HStack>
                         <Text fontSize={"14px"}>{"6 Days Ago"}</Text>

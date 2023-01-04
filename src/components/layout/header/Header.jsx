@@ -74,7 +74,7 @@ const Header = () => {
                                         <>
                                             <Link to={"/signin"} onClick={onClose} ><Button colorScheme={"teal"} variant={"ghost"}><RiLoginBoxLine style={{ marginRight: "4px" }} /> Login</Button></Link>
                                             <p>OR</p>
-                                            <Link onClick={onClose} ><Button colorScheme={"teal"} variant={"ghost"}><SiTheregister style={{ marginRight: "4px" }} />Register</Button></Link>
+                                            <Link to={"/register"} onClick={onClose} ><Button colorScheme={"teal"} variant={"ghost"}><SiTheregister style={{ marginRight: "4px" }} />Register</Button></Link>
                                         </>
                                     )}
 

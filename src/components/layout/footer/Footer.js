@@ -16,11 +16,11 @@ const Footer = () => {
         <div className="rightFooter">
           <Heading fontSize={20} >Follow Us On</Heading>
           <HStack spacing={4} fontSize="20" mt={5}>
-          <a href="https://www.instagram.com/orginonature/"><FaInstagram/></a>
-          <a href="https://www.facebook.com/profile.php?id=100007532081967"><FaFacebookSquare/></a>
-          <a href="https://www.instagram.com/orginonature/"><FaLinkedin/></a>
-          <a href="https://www.instagram.com/orginonature/"><FaGithub/></a>
-          <a href="https://www.instagram.com/orginonature/"><FaYoutube/></a>
+          <a href="https://www.instagram.com/orginonature/" target={"blank"} ><FaInstagram/></a>
+          <a href="https://www.facebook.com/profile.php?id=100007532081967" target={"blank"}><FaFacebookSquare/></a>
+          <a href="https://www.instagram.com/orginonature/" target={"blank"}><FaLinkedin/></a>
+          <a href="https://www.instagram.com/orginonature/" target={"blank"}><FaGithub/></a>
+          <a href="https://www.instagram.com/orginonature/" target={"blank"}><FaYoutube/></a>
           </HStack>
         </div>
 

@@ -1,11 +1,13 @@
-import {Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Container, FormLabel, Heading, HStack,  Input, LightMode,  VStack } from '@chakra-ui/react';
+import {Box, Button, Card, CardBody, CardFooter, CardHeader, Center, Container, FormLabel, Heading, HStack,  Input, LightMode,  Text,  VStack } from '@chakra-ui/react';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import Logo from '../Home/Logo';
 import "./login.css"
-const Login = ({ setIsHeader }) => {
+
+const ForgotPassword = ({setIsHeader}) => {
+ 
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    
     setIsHeader(false);
     return (
         <div className="LoginSignUpContainer" style={{ flexDirection: "column" }}>
@@ -13,20 +15,21 @@ const Login = ({ setIsHeader }) => {
 
             <Card maxW='md' className='auth-card'  >
                 <CardHeader >
-                    <Center><Heading size={"sm"} alignItems="center" color={"orange.500"} >{"Nice! To Have You Again."}</Heading></Center>
+                <Center><Heading size={"sm"} alignItems="center" color={"orange.500"} >{"Resert Your Password."}</Heading></Center>
+                    <Center><Text mt={6} >Enter your user account's verified email address and we will send you a password reset link.</Text></Center>
                 </CardHeader>
                 <CardBody>
                     <Container>
                         <form>
 
 
-                            <FormLabel htmlFor='email'>Username Or Email Address</FormLabel>
+                            <FormLabel htmlFor='email'>Email Address</FormLabel>
                             <Input
                                 required
                                 id='email'
                                 value={email}
                                 onChange={e => setEmail(e.target.value)}
-                                placeholder="saurav__s7 or example@gmail.com"
+                                placeholder="example@gmail.com"
                                 type={'text'}
                                 focusBorderColor="teal.500"
                                 border="2px"
@@ -34,28 +37,7 @@ const Login = ({ setIsHeader }) => {
 
                             />
 
-
-                            <FormLabel mt={6} htmlFor='email'>Password</FormLabel>
-                            <Input
-                                required
-                                id='password'
-                                value={password}
-                                onChange={e => setPassword(e.target.value)}
-                                placeholder="Password"
-                                type={"password"}
-                                focusBorderColor="teal.500"
-
-                                border="2px"
-                                borderColor={"teal.400"}
-                            />
-                            <LightMode>
-                                <Link to="/forgot/password">
-                                    <Button mt={4} variant={"link"} fontSize="sm" colorScheme={"teal"} >Forgot Password ?</Button>
-                                </Link>
-                            </LightMode>
-
-
-                            <LightMode> <Button width={"full"} my={4} colorScheme={"teal"} type="submit" >Sign In</Button></LightMode>
+                            <LightMode> <Button width={"full"} my={4} colorScheme={"teal"} type="submit" >Send Password Reset Link</Button></LightMode>
 
 
                         </form>
@@ -92,6 +74,7 @@ const Login = ({ setIsHeader }) => {
 
 
     )
+  
 }
 
-export default Login
+export default ForgotPassword
