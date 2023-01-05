@@ -5,7 +5,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 50px !important;
+    margin-bottom: 20px !important;
     top: 0%;
     left: 0;
   }
@@ -17,12 +18,15 @@
   box-sizing: border-box;
   border: 1px solid teal;
   border-radius: 4px;
-  font: 300 0.9vmax cursive;
+  font-family: cursive;
   outline: none;
  }
   
   
   .auth-card{
-    border: 0.5px solid rgb(181, 184, 184);
+    border: 0.5px solid teal;
     transition: all 0.5s;
+}
+.auth-card:hover{
+  transform: translateY(-10px);
 }

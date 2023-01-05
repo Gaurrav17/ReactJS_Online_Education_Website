@@ -29,8 +29,9 @@ const Login = ({ setIsHeader }) => {
                                 placeholder="saurav__s7 or example@gmail.com"
                                 type={'text'}
                                 focusBorderColor="teal.500"
-                                border="2px"
-                                borderColor={"teal.400"}
+                                border="1px"
+                                borderColor={"gray.400"}
+
 
                             />
 
@@ -45,8 +46,9 @@ const Login = ({ setIsHeader }) => {
                                 type={"password"}
                                 focusBorderColor="teal.500"
 
-                                border="2px"
-                                borderColor={"teal.400"}
+                                border="1px"
+                                borderColor={"gray.400"}
+
                             />
                             <LightMode>
                                 <Link to="/forgot/password">
@@ -80,12 +82,12 @@ const Login = ({ setIsHeader }) => {
                     </Container>
                 </CardFooter>
             </Card>
-            <HStack spacing={2} marginTop={"10"} >
+            <HStack spacing={2} marginTop={"5"} >
                 <LightMode><Button variant={"link"} colorScheme="teal" >Privacy & Security</Button></LightMode>
                 <LightMode><Button variant={"link"} colorScheme="teal" >Terms</Button></LightMode>
                 <LightMode><Button variant={"link"} colorScheme="orange" >Contact Trie</Button></LightMode>
             </HStack>
-            <VStack marginTop={10} >
+            <VStack marginTop={5} >
                 <Logo />
             </VStack>
         </div >

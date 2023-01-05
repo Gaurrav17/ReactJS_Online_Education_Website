@@ -27,11 +27,11 @@ const Register = ({ setIsHeader }) => {
 
 
 
-            <Card maxW='lg' className='auth-card'   >
+            <Card maxW='lg' className='auth-card' paddingLeft={10} paddingRight={10}  >
                 <CardHeader >
                     <Center style={{ flexDirection: "column" }} >
                         <Logo/>
-                        <Text mt={4} color="teal.500" >Let's Begin Your Journey With Us.</Text>
+                        <Text mt={4} color="orange.500" >Let's Begin Your Journey With Us.</Text>
                     </Center>
 
                 </CardHeader>
@@ -48,8 +48,9 @@ const Register = ({ setIsHeader }) => {
                                 placeholder="saurav__s7"
                                 type={'text'}
                                 focusBorderColor="teal.500"
-                                border="2px"
-                                borderColor={"teal.400"}
+                                border="1px"
+                                borderColor={"gray.400"}
+
 
                             />
 
@@ -57,7 +58,7 @@ const Register = ({ setIsHeader }) => {
 
 
 
-                            <FormLabel mt={4} htmlFor='email'>Name</FormLabel>
+                            <FormLabel mt={2} htmlFor='email'>Name</FormLabel>
                             <Input
                                 required
                                 id='email'
@@ -66,13 +67,14 @@ const Register = ({ setIsHeader }) => {
                                 placeholder="Saurav Saxena"
                                 type={'text'}
                                 focusBorderColor="teal.500"
-                                border="2px"
-                                borderColor={"teal.400"}
+                                border="1px"
+                                borderColor={"gray.400"}
+
 
                             />
 
 
-                            <FormLabel mt={4} htmlFor='text'>Email Address</FormLabel>
+                            <FormLabel mt={2} htmlFor='text'>Email Address</FormLabel>
                             <Input
                                 required
                                 id='email'
@@ -81,13 +83,14 @@ const Register = ({ setIsHeader }) => {
                                 placeholder="exp@gmail.com"
                                 type={'email'}
                                 focusBorderColor="teal.500"
-                                border="2px"
-                                borderColor={"teal.400"}
+                                border="1px"
+                                borderColor={"gray.400"}
+
 
                             />
 
 
-                            <FormLabel mt={4} htmlFor='email'>Password</FormLabel>
+                            <FormLabel mt={2} htmlFor='email'>Password</FormLabel>
                             <Input
                                 required
                                 id='password'
@@ -97,18 +100,22 @@ const Register = ({ setIsHeader }) => {
                                 type={"password"}
                                 focusBorderColor="teal.500"
 
-                                border="2px"
-                                borderColor={"teal.400"}
+                                border="1px"
+                                borderColor={"gray.400"}
+
                             />
 
-                            <HStack spacing={4}>
-                                <Avatar my={4} name='Segun Adebayo' src={imagePrev} />
+                            <HStack spacing={4} mt="2" >
+                                <Avatar  name='Segun Adebayo' src={imagePrev} />
                                 <input
                                     type="file"
                                     name="avatar"
                                     accept="image/*"
                                     className='file-input'
                                     onChange={changeImageHandler}
+                                    border="1px"
+                                    borderColor={"gray.400"}
+    
                                 />
 
                             </HStack>
@@ -141,7 +148,7 @@ const Register = ({ setIsHeader }) => {
                             <HStack spacing={2} marginTop={5}>
                                 <LightMode><Button variant={"link"} colorScheme="teal" >Privacy & Security</Button></LightMode>
                                 <LightMode><Button variant={"link"} colorScheme="teal" >Terms</Button></LightMode>
-                                <LightMode><Button variant={"link"} colorScheme="orange" >Contact Trie</Button></LightMode>
+                                <LightMode><Link to={"/Contact"}><Button variant={"link"} colorScheme="orange" >Contact Trie</Button> </Link></LightMode>
                             </HStack>
                         </Center>
                     </Container>

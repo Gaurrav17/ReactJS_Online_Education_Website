@@ -49,25 +49,25 @@ const ForgotPassword = ({setIsHeader}) => {
                 <CardFooter >
 
                     <Container mt={-10} >
-                        <Box>
-                            New To Trie? <LightMode>
-                                <Link to={"/register"} >
-                                <Button variant={"link"} color={"orange.500"} >
-                                    Regiter Here.
-                                </Button>{" "}
-                                </Link>
+                    <Box>
+                            Alredy Associated To Trie ? <LightMode>
+                                <Link to={"/signin"}>
+                                    <Button variant={"link"} color={"orange.500"} >
+                                        Sign In Here.
+                                    </Button>{" "}
 
+                                </Link>
                             </LightMode>
                         </Box>
                     </Container>
                 </CardFooter>
             </Card>
-            <HStack spacing={2} marginTop={"10"} >
+            <HStack spacing={2} marginTop={"5"} >
                 <LightMode><Button variant={"link"} colorScheme="teal" >Privacy & Security</Button></LightMode>
                 <LightMode><Button variant={"link"} colorScheme="teal" >Terms</Button></LightMode>
                 <LightMode><Button variant={"link"} colorScheme="orange" >Contact Trie</Button></LightMode>
             </HStack>
-            <VStack marginTop={10} >
+            <VStack marginTop={5} >
                 <Logo />
             </VStack>
         </div >

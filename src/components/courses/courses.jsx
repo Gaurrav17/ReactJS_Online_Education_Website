@@ -1,9 +1,9 @@
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Container, Heading, HStack, Image, Input, LightMode, Stack, Text } from '@chakra-ui/react'
-import React, { useState } from 'react'
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Container, Heading, HStack, Image, Input, LightMode, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Stack, Text, useDisclosure } from '@chakra-ui/react'
+import React, { useRef, useState } from 'react'
 
 
 
-const Courses = ({setIsHeader}) => {
+const Courses = ({ setIsHeader }) => {
     const [keyWord, setKeyWord] = useState("");
     const [category, setCategory] = useState("")
     const courses = [
@@ -19,8 +19,17 @@ const Courses = ({setIsHeader}) => {
     const addToPlaylistHandler = (id) => {
 
     }
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const [scrollBehavior, setScrollBehavior] = useState('inside')
+    const btnRef = useRef(null)
 
     const Course = ({ views, title, src, id, addToPlaylistHandler, creator, description, lectures }) => {
+
+        const options = {
+            value:4,
+            readOnly: true,
+            precision:0.5,
+          };
 
         return (
             <Card maxW='xs' className='course-card'>
@@ -33,41 +42,41 @@ const Courses = ({setIsHeader}) => {
                     <Stack mt='6' spacing='2'>
                         <Heading size='md' noOfLines={1}>{title}</Heading>
                         <Text noOfLines={2} fontSize="14px">{description}</Text>
-                        <Text  fontSize='2xl'>
-                        ₹450
+                        <Text fontSize='2xl'>
+                            ₹450
                         </Text>
                     </Stack>
                     <HStack marginTop={"1"}>
                         <Heading size={"sm"} >Teacher's: </Heading>
                         <Text fontSize={"16px"}>{creator}</Text>
                     </HStack>
-                    <HStack marginTop={"1"}  spacing='6' >
-                    <HStack >
-                        <Heading size={"sm"}>Videos: </Heading>
-                        <Text fontSize={"16px"}>{lectures}</Text>
+                    <HStack marginTop={"1"} spacing='6' >
+                        <HStack >
+                            <Heading size={"sm"}>Videos: </Heading>
+                            <Text fontSize={"16px"}>{lectures}</Text>
+                        </HStack>
+                        <HStack>
+
+                            <Text fontSize={"16px"}>{views}</Text>
+                            <Heading size={"xs"} >Views</Heading>
+                        </HStack>
+                        <HStack>
+                            <Text fontSize={"14px"}>{"6 Days Ago"}</Text>
+                        </HStack>
                     </HStack>
-                    <HStack>
-                        
-                        <Text fontSize={"16px"}>{views}</Text>
-                        <Heading size={"xs"} >Views</Heading>
-                    </HStack>
-                    <HStack>
-                        <Text fontSize={"14px"}>{"6 Days Ago"}</Text>
-                    </HStack>
-                    </HStack>
-                   
+
                 </CardBody>
-               
-                <CardFooter marginTop={"-6"}>
+
+                {/* <CardFooter marginTop={"-6"}>
                     <ButtonGroup spacing='2'>
-                        <LightMode><Button variant='solid' colorScheme='teal'>
+                        <LightMode><Button variant='solid' colorScheme='teal'ref={btnRef} onClick={onOpen}>
                             Watch now
                         </Button></LightMode>
                         <Button variant='ghost' colorScheme='teal'>
                             Add To PlayList
                         </Button>
                     </ButtonGroup>
-                </CardFooter>
+                </CardFooter> */}
             </Card>
         )
 
@@ -120,6 +129,24 @@ const Courses = ({setIsHeader}) => {
                 />
 
             </Stack>
+
+            <Modal
+                onClose={onClose}
+                finalFocusRef={btnRef}
+                isOpen={isOpen}
+                scrollBehavior={scrollBehavior}
+            >
+                <ModalOverlay />
+                <ModalContent>
+                    <ModalHeader>Modal Title</ModalHeader>
+                    <ModalBody>
+                        LOLA
+                    </ModalBody>
+                    <ModalFooter>
+                        <Button onClick={onClose}>Close</Button>
+                    </ModalFooter>
+                </ModalContent>
+            </Modal>
 
         </Container>
     )

@@ -32,9 +32,6 @@
 .course-card:hover{
     transform: translateY(-10px);
 }
-.auth-card:hover{
-    transform: translateY(-10px);
-}
 
 @media screen and (max-width: 1282px){
 
