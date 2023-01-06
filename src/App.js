@@ -32,7 +32,7 @@ function App() {
         <Route path='*' element={<NotFound setIsHeader={setIsHeader} />} />
         <Route path='/payment/success' element={<PaymentSuccess setIsHeader={setIsHeader} />} />
         <Route path='/payment/fail' element={<PaymentFail setIsHeader={setIsHeader} />} />
-        <Route path='/student/subscribe' element={<Subscribe setIsHeader={setIsHeader} />} /> 
+        <Route path='/course/subscription/:id' element={<Subscribe setIsHeader={setIsHeader} />} /> 
       </Routes>
 
       {isHeader && 
