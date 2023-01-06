@@ -16,7 +16,7 @@ const Courses = ({ setIsHeader }) => {
         "Problem Solving Skils",
         "Java SpringBoot",
     ];
-    setIsHeader(true)
+    setIsHeader(true) 
     return (
         <Container minH={'95vh'} maxW="container.lg" paddingY={'8'}>
             <Heading children="Your Desirable Camp Is Here !!! " marginTop={"10"} />

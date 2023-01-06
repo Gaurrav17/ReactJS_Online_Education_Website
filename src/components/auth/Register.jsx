@@ -61,8 +61,8 @@ const Register = ({ setIsHeader }) => {
                             <FormLabel mt={2} htmlFor='email'>Name</FormLabel>
                             <Input
                                 required
-                                id='email'
-                                value={email}
+                                id='name'
+                                value={""}
                                 onChange={e => setEmail(e.target.value)}
                                 placeholder="Saurav Saxena"
                                 type={'text'}

@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Card, CardBody, Heading, HStack, Image, Stack, Text, Button, LightMode, ButtonGroup, CardFooter } from "@chakra-ui/react";
 import ReactStars from "react-rating-stars-component";
 import { AiOutlineShoppingCart } from "react-icons/ai"
+import {RiShareForwardLine} from "react-icons/ri"
 const CourseCard = ({ views, title, src, id, addToPlaylistHandler, creator, description, lectures, type, onOpen, btnRef }) => {
 
     const options = {
@@ -59,12 +60,10 @@ const CourseCard = ({ views, title, src, id, addToPlaylistHandler, creator, desc
                 </CardBody>
 
                 {type &&
-
                     <>
-
                         <CardFooter marginTop={"-6"}>
                             <ButtonGroup spacing='2'>
-                                <LightMode><Button variant='solid' paddingLeft="8" paddingRight="8" colorScheme='teal' ref={btnRef} onClick={onOpen}>
+                                <LightMode><Button variant='solid' paddingLeft="8" paddingRight="8" colorScheme='teal'>
                                     Buy now
                                 </Button></LightMode>
                                 <Button variant='ghost' colorScheme='orange'>
@@ -75,14 +74,20 @@ const CourseCard = ({ views, title, src, id, addToPlaylistHandler, creator, desc
 
                         </CardFooter>
 
-                        <Button variant='ghost' colorScheme='red' margin={3}>
+                        <HStack mb={2}>
+                        <Button variant='ghost' colorScheme='red' marginLeft={2} ref={btnRef} onClick={onOpen}>
                             <AiOutlineShoppingCart style={{ marginRight: "4px" }} />
                             Apply Coupon
                         </Button>
+                        
+                        <Button variant={"ghost"}  colorScheme='teal' margin={3}>
+                            <RiShareForwardLine style={{ marginRight: "4px" }} />
+                           Share This!
+                        </Button>
+                       
+
+                        </HStack>
                     </>
-
-
-
                 }
 
 

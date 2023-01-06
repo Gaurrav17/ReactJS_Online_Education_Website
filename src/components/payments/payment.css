@@ -1,12 +1,10 @@
 .ProductDetails {
-  
     width: 100%;
-
     padding-left: 16vmax;
     padding-right: 16vmax;
     box-sizing: border-box;
     display: flex;
-
+    margin-top: 40px;
 }
 
 .ProductDetails > div {
@@ -53,6 +51,15 @@
       padding: 0;
     }
    
+  }
+  @media screen and (max-width: 428px) {
+
+    .lola{
+      flex-direction: column !important;
+      justify-content: start !important;
+      align-items: flex-start !important;
+      
+    }
   }
 
 

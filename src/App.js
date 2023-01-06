@@ -14,9 +14,13 @@ import NotFound from './components/not found/NotFound.jsx';
 import PaymentFail from './components/payments/PaymentFail.jsx';
 import PaymentSuccess from './components/payments/PaymentSuccess.jsx';
 import Subscribe from './components/payments/Subscribe.jsx';
+import CourseVideoPage from './components/videoplayer/courseVideoPage.jsx';
 
 function App() {
   const [isHeader,setIsHeader] = useState(true);
+  window.addEventListener(("contextmenu"),(e)=>{
+    e.preventDefault();
+  })
   return (
     <Router>
        {isHeader && 
@@ -33,6 +37,7 @@ function App() {
         <Route path='/payment/success' element={<PaymentSuccess setIsHeader={setIsHeader} />} />
         <Route path='/payment/fail' element={<PaymentFail setIsHeader={setIsHeader} />} />
         <Route path='/course/subscription/:id' element={<Subscribe setIsHeader={setIsHeader} />} /> 
+        <Route path='/course/videos' element={<CourseVideoPage setIsHeader={setIsHeader} />} /> 
       </Routes>
 
       {isHeader && 
