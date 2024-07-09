@@ -42,7 +42,7 @@ const Contact = ({ setIsHeader }) => {
                                 id='name'
                                 value={name}
                                 onChange={e => setName(e.target.value)}
-                                placeholder="Saurav Saxena"
+                                placeholder="Gaurav Srivastava"
                                 type={'text'}
                                 focusBorderColor="teal.500"
                                 border="1px"

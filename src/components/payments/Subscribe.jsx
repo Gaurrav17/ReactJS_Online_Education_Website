@@ -1,7 +1,7 @@
 import { Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box, Button, Container, FormControl, FormErrorMessage, FormHelperText, FormLabel, Heading, HStack, Input, LightMode, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure, withDefaultVariant } from '@chakra-ui/react'
 import React, { useEffect, useRef, useState } from 'react'
 import CourseCard from '../courses/CourseCard'
-import Thumbnail from "../../assets/images/thumbnail.png"
+import Thumbnail from "../../assets/images/thumbnail2.png"
 import "./payment.css"
 import { FiStar } from "react-icons/fi"
 import { FaLanguage } from "react-icons/fa"

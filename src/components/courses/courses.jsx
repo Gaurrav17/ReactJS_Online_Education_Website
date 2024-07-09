@@ -2,7 +2,7 @@ import { Button,   Container, Heading, HStack,  Input, LightMode,  Stack, Text }
 import React, { useState } from 'react'
 
 import { Link } from 'react-router-dom';
-import Thumbnail from "../../assets/images/thumbnail.png"
+import Thumbnail from "../../assets/images/thumbnail2.png"
 import CourseCard from './CourseCard';
 const Courses = ({ setIsHeader }) => {
     const [keyWord, setKeyWord] = useState("");
@@ -57,7 +57,7 @@ const Courses = ({ setIsHeader }) => {
                         title={"Java Complete BootCamp 2023"}
                         id={"id"}
                         src={Thumbnail}
-                        creator={"Saurav Saxena"}
+                        creator={"Gaurav Srivastava"}
                         lectures={2}
                         views={23}
                         description={"Learn java from beginer to advanced, From this course you can learn and relate with real life application."}

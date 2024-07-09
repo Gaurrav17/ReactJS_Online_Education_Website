@@ -16,11 +16,9 @@ const Footer = () => {
         <div className="rightFooter">
           <Heading fontSize={20} >Follow Us On</Heading>
           <HStack spacing={4} fontSize="20" mt={5}>
-          <a href="https://www.instagram.com/orginonature/" target={"blank"} ><FaInstagram/></a>
-          <a href="https://www.facebook.com/profile.php?id=100007532081967" target={"blank"}><FaFacebookSquare/></a>
-          <a href="https://www.instagram.com/orginonature/" target={"blank"}><FaLinkedin/></a>
-          <a href="https://www.instagram.com/orginonature/" target={"blank"}><FaGithub/></a>
-          <a href="https://www.instagram.com/orginonature/" target={"blank"}><FaYoutube/></a>
+          
+          <a href="https://www.linkedin.com/in/gaurav-srivastava-4855871bb/" target={"blank"}><FaLinkedin/></a>
+          
           </HStack>
         </div>
 
