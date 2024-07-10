@@ -14,11 +14,9 @@ You will also see any lint errors in the console.
 
 This Web Got Home page where it display neccasry information about courses
 
-![Screenshot (29)](https://github.com/Gaurrav17/ReactJS_Online_Education_Website/assets/121348658/16ffdf2b-67dd-443f-b8c0-dfbf952ac1cb) 
 
 Course Page
 
-![Screenshot (30)](https://github.com/Gaurrav17/ReactJS_Online_Education_Website/assets/121348658/e3e8c283-9b90-4de3-87bb-8eb8173f6b78)
 
 
 
